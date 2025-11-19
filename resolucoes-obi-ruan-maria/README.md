@@ -54,6 +54,7 @@ python3 quest01_zero_para_cancelar.py
 - Ou usando um arquivo de entrada:
 
 ```python3 zero_para_cancelar.py < entrada.txt
+```
 
 # 🟩 Questão 02 – Ogro
 
@@ -80,4 +81,5 @@ Regras:
 
 # ▶️ Como executar a solução
 
-`python3 ogro.py`
+```python3 ogro.py
+``
