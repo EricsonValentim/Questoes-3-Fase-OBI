@@ -47,12 +47,13 @@ Esse é exatamente o comportamento de desfazer/voltar.
 
 Caso queira testar com entrada manual:
 
-`bash`
-`python3 quest01_zero_para_cancelar.py`
+```bash
+python3 quest01_zero_para_cancelar.py
+```
 
 - Ou usando um arquivo de entrada:
 
-`python3 zero_para_cancelar.py < entrada.txt`
+```python3 zero_para_cancelar.py < entrada.txt
 
 # 🟩 Questão 02 – Ogro
 
