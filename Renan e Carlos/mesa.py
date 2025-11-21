@@ -1,3 +1,5 @@
+# Resolução da Questão nivel sênior muro da 3ª fase da OBI2018
+# Autores: Renan e Carlos
 a = int(input())
 b = int(input())
 
