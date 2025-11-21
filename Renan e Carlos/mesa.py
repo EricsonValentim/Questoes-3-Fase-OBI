@@ -1,3 +1,5 @@
+# Resolução da Questão nivel sênior mesa da 3ª fase da OBI2019
+# Autores: Renan e Carlos
 a = int(input())
 b = int(input())
 
