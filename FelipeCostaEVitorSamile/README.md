@@ -1,2 +1,2 @@
 Trabalho: Questões da lista
-Dupla: Felie da Costa e Vitor Sâmile
+Dupla: Felipe da Costa e Vitor Sâmile
