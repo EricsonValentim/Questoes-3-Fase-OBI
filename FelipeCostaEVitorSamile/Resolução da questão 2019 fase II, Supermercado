@@ -1,0 +1,15 @@
+print("     COMPARADOR DE PREÇO DE CARNE (1 KG)      ")
+N = int(input("Digite o número de supermercados: "))
+menor_preco = 999999999
+print("\nAgora digite os dados de cada supermercado.")
+print("Formato: preço gramas   (exemplo: 24.00 250)\n")
+for i in range(1, N + 1):
+    linha = input(f"Supermercado {i} : preço e gramas: ").strip()
+    P, G = linha.split()
+    P = float(P)
+    G = int(G)
+    preco_por_kg = (P / G) * 1000
+    print(f"Preço equivalente por 1 kg: B$ {preco_por_kg:.2f}\n")
+    if preco_por_kg < menor_preco:
+        menor_preco = preco_por_kg
+print(f"MENOR PREÇO POR 1 KG ENCONTRADO: B$ {menor_preco:.2f}")
