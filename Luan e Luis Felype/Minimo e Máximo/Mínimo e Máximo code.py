@@ -1,19 +1,19 @@
 def soma_digitos(n):
     return sum(int(d) for d in str(n))
-(1) ^^^^^^
+# (1) ^^^^^^
 S = int(input().strip())
 A = int(input().strip())
 B = int(input().strip())
-(2) ^^^^^^
+# (2) ^^^^^^
 menor = None
 maior = None
-(3) ^^^^^^
+# (3) ^^^^^^
 for num in range(A, B + 1):
     if soma_digitos(num) == S:
         if menor is None:
             menor = num
         maior = num
-(4) ^^^^^^
+# (4) ^^^^^^
 print(menor)
 print(maior)
 
@@ -33,4 +33,5 @@ print(maior)
 # maior = num, não tem condição pois a cada novo número válido encontrado, ele será maior que os anteriores;(4)
 # No final do loop, 'maior' será realmente o maior número cuja soma dos dígitos é S;
 # a questão pede duas linhas na saida então printamos o resultado, prints.
+
 # //
