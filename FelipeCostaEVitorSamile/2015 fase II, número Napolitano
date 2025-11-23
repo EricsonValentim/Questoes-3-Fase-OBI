@@ -1,0 +1,33 @@
+Números napolitanos, assim como números romanos, são escritos como uma sequência de letras, cada uma com um valor numérico, que são somados para compor o valor do número representado. As letras utilizadas, tanto por números romanos como por números napolitanos, e seus respectivos valores, são: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000. Dessa forma, MMXV representa 2015 tanto em números romanos como em números napolitanos. Também de maneira similar a números romanos, em números napolitanos é possivel colocar um símbolo p de valor menor antes de outro símbolo q de valor maior para diminuir a contribuição do símbolo q ao resultado final. Por exemplo, IX significa 10 - 1 = 9, tanto em números napolitanos como em números romanos.
+
+No entanto, no caso de números napolitanos os símbolos são processados da esquerda para a direita e cada símbolo diminui o valor do próximo símbolo maior do que ele, sucessivamente, até que não haja um símbolo maior do que último símbolo processado, e nesse caso o valor atual do último símbolo processado é somado ao resultado final. Por exemplo, considere IVIXX. O primeiro I muda o valor do V para quatro. O V, agora com valor 4, muda o valor do primeiro X para 6, e o segundo I muda o valor do primeiro X para 5. Então, o primeiro X soma 5 ao resultado final, já que não há símbolo de significado maior à sua direita (note que o que importa para a comparação é o valor padrão do símbolo, e não o seu valor depois de modificado por outros). Continuando, o segundo X soma 10 ao resultado final. Portanto, o número napolitano IVIXX representa o valor 15.
+
+Sua tarefa é, dada uma cadeia de caracteres, determinar o valor do número napolitano que ela representa.
+
+Entrada
+A entrada consiste de uma única linha, contendo uma cadeia de caracteres S.
+Saída
+Seu programa deve produzir uma única linha, contendo um único número inteiro,
+o valor do número napolitano que a sequência da entrada representa.
+
+Restrições
+S contém apenas os caracteres I, V, X, L, C, D ou M
+1 ≤ comprimento(S) ≤ 106
+Informações sobre a pontuação
+Em um conjunto de casos de testes somando 40 pontos, comprimento(S) ≤ 103
+Exemplos
+Entrada
+IVIXX
+Saída
+15
+	
+Entrada
+XXXXXXL
+Saída
+-10
+	
+Entrada
+IVXLCDM
+Saída
+556
+	
