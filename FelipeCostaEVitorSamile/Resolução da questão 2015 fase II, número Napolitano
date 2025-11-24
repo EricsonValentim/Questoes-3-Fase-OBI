@@ -1,22 +1,41 @@
-def valor(letra):
-    if letra == 'I': return 1
-    elif letra == 'V': return 5
-    elif letra == 'X': return 10
-    elif letra == 'L': return 50
-    elif letra == 'C': return 100
-    elif letra == 'D': return 500
-    elif letra == 'M': return 1000
-print("=== Conversor de Número Napolitano ===")
-s = input("Digite o número napolitano (ex: IVIXX): ").strip().upper()  
-atual = valor(s[0])
+# Lê a string e garante que está em maiúsculo
+S = input().strip().upper()
+
+# Verificação da restrição do tamanho
+if len(S) < 1 or len(S) > 10**6:
+    raise ValueError("O tamanho de S deve estar entre 1 e 10^6 caracteres.")
+
+# Valores fixos das letras
+valores = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+}
+
+# Verificação se só existem caracteres válidos
+for c in S:
+    if c not in valores:
+        raise ValueError("A string deve conter apenas I, V, X, L, C, D ou M.")
+
 resultado = 0
-for i in range(1, len(s)):
-    v_anterior = valor(s[i - 1])
-    v_prox = valor(s[i])
-    if v_prox > v_anterior:
-        atual = v_prox - atual
-    else:
-        resultado += atual
-        atual = v_prox
-resultado += atual
-print("Valor final:", resultado)
+i = 0
+
+while i < len(S):
+    valor_atual = valores[S[i]]
+    modificado = valor_atual
+    j = i + 1
+
+    # Diminui sucessivamente o valor do próximo símbolo maior
+    while j < len(S) and valores[S[j]] > valor_atual:
+        modificado = valores[S[j]] - modificado
+        j += 1
+
+    resultado += modificado
+    i = j
+
+print(resultado)
+
