@@ -117,6 +117,19 @@ Depois que todas as palavras foram testadas, o programa mostra uma janela dizend
   easygui.msgbox(f"{contagem} palavra(s) correspondem ao número {N}.", "Resultado")
   ```
 
+### Envio dos Arquivos via Git Bash
+![Imagem](https://github.com/divenanciodev/dupla-keliane-thaisa/blob/main/resolu%C3%A7%C3%A3o_teclado/3%C2%AAfase_2021/Explica%C3%A7%C3%A3oProblema/Captura%20de%20tela%202025-11-24%20094029.png?raw=true)
+
+### Passo a Passo
+![Imagem](https://github.com/divenanciodev/dupla-keliane-thaisa/blob/main/resolu%C3%A7%C3%A3o_teclado/3%C2%AAfase_2021/Explica%C3%A7%C3%A3oProblema/Captura%20de%20tela%202025-11-24%20094125.png?raw=true)
+
+### 💻Preparando para enviar
+O git já estava configurado com email e usuário, após isso foi clonado o repositório destino e dentro dessa pasta foi iniciado o git bash. Em seguida foi copiado os arquivos da pasta local para dentro da pasta clonada, após isso foi feito o git status para analisar quais arquivos estariam sendo enviados e por fim, o envio: usando o comando (git add . ) que prepara os arquivos a serem enviados, por conseguinte (git commit -m "Mensagem") e finaliza com (git push) que envia as alterações para o repositório. 
+
+### Final
+![Imagem](https://github.com/divenanciodev/dupla-keliane-thaisa/blob/main/resolu%C3%A7%C3%A3o_teclado/3%C2%AAfase_2021/Explica%C3%A7%C3%A3oProblema/Captura%20de%20tela%202025-11-24%20094147.png?raw=true)
+
+
 
 
 
