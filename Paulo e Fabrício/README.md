@@ -1,5 +1,5 @@
-'''
-============ Questão OBI 2017 nível Sênior, fase 2 ====================== 
+
+________ Questão OBI 2017 nível Sênior, fase 2 ________
 
                             DARIO E XERXES
 
@@ -8,16 +8,15 @@ logo, eles, antes disso, dão para realizar com 5 opções e não 3,
 com N sendo impar e quantia de rodadas. Se Dario escolher 0
 e Xerxes 3, logo Xerxes é o vencedor da rodada e assim por dainte.  
 vencedor da rodada.
-
-======= Entrada ===========================================================
+---
+________ Entrada ________
 A primeira linha da entrada contém um inteiro N, o número de rodadas na partida. Cada uma das N linhas seguintes contém dois inteiros D e X, representando a mão que os jogadores dario e xerxes, respectivamente, jogaram em uma rodada.
 
-====== Saída
+________ Saída ________
 Seu programa deve imprimir uma linha contendo o nome do jogador que venceu a partida: dario ou xerxes. Todas as letras devem ser minúsculas, sem nenhum acento!
-===== restrições ============================================================
-    * 1 ≤ N ≤ 999, N é impar
+________ restrições ________
     * 0 ≤ D,X ≤ 4 e D ≠ Xcv
-=============================================================================
+--- 
 ````Exemplos
 ----- Entrada -------
     3
