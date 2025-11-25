@@ -49,7 +49,7 @@ def main():
             dario = dario + 1 
 # Após todas as rodadas verifica quem venceu mais
     if dario > N / 2:
-        print("dairo")
+        print("dario")
     else:
         print("xerxes")
 main()
