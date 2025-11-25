@@ -1,7 +1,6 @@
-
-________  ________
+________________
 # Questão OBI 2017 nível Sênior, fase 2
-(__Dario e Xerxes__)
+[Dario e Xerxes](https://olimpiada.ic.unicamp.br/pratique/ps/2017/f2/xerxes)
 
 Dario e Xerxes são dois amigos que bricam de pedra papel e tesoura
 logo, eles, antes disso, dão para realizar com 5 opções e não 3,
