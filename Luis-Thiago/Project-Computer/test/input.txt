@@ -1,0 +1,12 @@
+# Exemplo de uso;
+
+tamanho_memoria = 16
+instrucoes = [
+    (1, 4, 8),   # FRENTE 4 8
+    (2, 16, 3),  # TRÁS 16 3
+    (2, 2, 12),  # TRÁS 2 12
+    (1, 8, 7),   # FRENTE 8 7
+    (3, 4),      # IMPRIME 4
+    (3, 14),     # IMPRIME 14
+    (3, 1)       # IMPRIME 1
+]

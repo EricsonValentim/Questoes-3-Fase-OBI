@@ -1,0 +1,38 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-project-computer:
+    name: Test Project-Computer
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Install pylint
+      run: pip install pylint
+
+    - name: Lint Project-Computer
+      run: pylint Project-Computer/src/main.py || true
+
+
+    - name: Run program with input.txt
+      run: |
+        cd Project-Computer
+        python src/main.py < test/input.txt > test/output.txt
+
+    - name: Compare output with expected
+      run: |
+        cd Project-Computer/test
+        diff -uZ expected.txt output.txt
